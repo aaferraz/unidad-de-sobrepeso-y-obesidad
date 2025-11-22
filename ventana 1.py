@@ -1,6 +1,6 @@
 from funciones import *
 
-class Win_1 (QWidgets):
+class Win_1 (QWidget):
     def __init__(self):
         QWidget().__init__()
         self.set_appear()
@@ -13,6 +13,6 @@ class Win_1 (QWidgets):
         self.resize(win_width, win_height)
         self.move(win_x, win_y)
     def initUI(self):
-       pass 
+        pass 
     def connect(self):
         pass
