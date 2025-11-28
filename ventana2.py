@@ -1,6 +1,8 @@
 from funciones import *
 from ventana3 import Win_3
 
+app = QApplication([])
+
 class Win_2 (QWidget):
     def __init__(self):
         super().__init__()
@@ -8,7 +10,6 @@ class Win_2 (QWidget):
         self.initUI()
         self.connect()
         self.show()
-        app.exec_() 
 
     def set_appear(self):
         self.setWindowTitle(txt_title)
@@ -18,6 +19,8 @@ class Win_2 (QWidget):
     def initUI(self):
         print('paso')
         self.texto_princ = QLabel (txt_n)
+        self.texto_princ.setStylesheet('color: rgb(230, 66, 32)')
+        # self.texto_princ
         self.texto_in1 = QLabel (txt_len1)
         self.intr_texto1 = QLineEdit (txt_le1)
         self.texto_in2 = QLabel (txt_len2)
@@ -45,10 +48,12 @@ class Win_2 (QWidget):
         self.boton_N_V.clicked.connect(self.next_click)
     def next_click (self):
         self.hide()
-        self.camb_pan2 = Win_3()
+        self.camb_pan2 = Win_3(self.intr_texto1, self.intr_texto2, self.intr_texto3)
 
-# main_Win = QWidget()
-# main_Win.show()
-# app.exec_()
+# main_Win = QWidget()\
 ventana_pantalla = Win_2()
+ventana_pantalla.show()
+
+app.exec_()
+
 # ventana_pantalla.show()
