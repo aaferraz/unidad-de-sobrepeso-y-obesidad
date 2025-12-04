@@ -1,6 +1,7 @@
 from pygame import *
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QRadioButton, QLineEdit,  QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout
+from PyQt5.QtGui import QFont, QIntValidator, QDoubleValidator, QPixmap
 from random import *
 
 #todas las ventanas
@@ -11,9 +12,9 @@ app = QApplication([])
 txt_buttom_next = 'Siguiente'
 #ventana 1
 txt_princ = 'Bienvenido a Unidad de Sobre Peso y Obesidad'
-txt_inf1 = 'Vamos a hacerle unas preguntas responda /n' \
-'y despues le diremos cuanto tiene que bajar o subir de peso./n' \
-'/n' \
+txt_inf1 = 'Vamos a hacerle unas preguntas responda \n' \
+'y despues le diremos cuanto tiene que bajar o subir de peso.\n' \
+'\n' \
 'lea y acepte o rechaze la propuesta que le estamos haciendo'
 txt_btn_nxt_S = 'acepto'
 txt_btn_nxt_N = 'rechazo'
@@ -40,4 +41,7 @@ inf_txt2 = 'Nosotros solo estamos intentando ayudarlos a saber cuanto te falta\n
 'porquue todos somos diferentes. Que tengas un bonito fin de semana.'
 
 #ventana 4
-
+tetxo_introc = 'si las respuestas son negativas necesitas bajar /n' \
+'y si las respuestas son positivas necesitas subir'
+texto_resp1 = 'esto es lo que te falta para llegar al peso minimo'
+texto_resp2 = 'esto es lo que te falta para llegar al peso maximo'

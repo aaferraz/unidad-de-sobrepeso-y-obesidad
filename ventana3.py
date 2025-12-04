@@ -2,12 +2,15 @@ from funciones import *
 from ventana4 import Win_4
 
 class Win_3 (QWidget):
-    def __init__(self):
+    def __init__(self, intr_texto1, intr_texto2, intr_texto3):
         super().__init__()
         self.set_appear()
         self.initUI()
         self.connect()
         self.show()
+        self.intr_text1 = intr_texto1
+        self.intr_text2 = intr_texto2
+        self.intr_text3 = intr_texto3
  
     def set_appear(self):
         self.setWindowTitle(txt_title)
@@ -37,4 +40,4 @@ class Win_3 (QWidget):
         self.button_NV.clicked.connect(self.next_click)
     def next_click (self):
         self.hide()
-        self.camb_pan2 = Win_4()
+        self.camb_pan2 = Win_4(self.intr_text1, self.intr_text2, self.intr_text3)

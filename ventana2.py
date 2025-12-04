@@ -20,10 +20,15 @@ class Win_2 (QWidget):
         self.texto_princ = QLabel (txt_n)
         self.texto_in1 = QLabel (txt_len1)
         self.intr_texto1 = QLineEdit (txt_le1)
+        int_validator1 = QIntValidator(0, 999, self)
+        self.intr_texto1.setValidator(int_validator1)
         self.texto_in2 = QLabel (txt_len2)
         self.intr_texto2 = QLineEdit (txt_le2)
+        int_validator2 = QDoubleValidator(0.0, 999.0, 2, self)
+        self.intr_texto2.setValidator(int_validator2)
         self.texto_in3 = QLabel (txt_len3)
         self.intr_texto3 = QLineEdit (txt_le3)
+        self.intr_texto3.setValidator(int_validator2)
         #_N_W significa nueva ventana
         self.boton_N_V = QPushButton (txt_buttom_next)
         self.H_layout = QHBoxLayout()
@@ -45,4 +50,4 @@ class Win_2 (QWidget):
         self.boton_N_V.clicked.connect(self.next_click)
     def next_click (self):
         self.hide()
-        self.camb_pan2 = Win_3()
+        self.camb_pan2 = Win_3(self.intr_texto1, self.intr_texto2, self.intr_texto3)
