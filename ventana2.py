@@ -46,9 +46,3 @@ class Win_2 (QWidget):
     def next_click (self):
         self.hide()
         self.camb_pan2 = Win_3()
-
-# main_Win = QWidget()
-# main_Win.show()
-# app.exec_()
-ventana_pantalla = Win_2()
-# ventana_pantalla.show()

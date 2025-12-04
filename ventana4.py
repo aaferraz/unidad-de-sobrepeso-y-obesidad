@@ -4,8 +4,13 @@ from ventana2 import *
 class Win_4 (QWidget):
     def __init__(self):
         super().__init__()
-        pass
+        self.set_appear()
+        self.initUI()
+        self.show()
+        app.exec_()
     def set_appear(self):
-        pass
+        self.setWindowTitle(txt_title)
+        self.resize(win_width, win_height)
+        self.move(win_x, win_y)
     def initUI(self):
         pass
