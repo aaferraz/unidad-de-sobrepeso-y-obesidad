@@ -17,6 +17,11 @@ class Win_3 (QWidget):
         self.resize(win_width, win_height)
         self.move(win_x, win_y)
     def initUI(self):
+        self.imagenfla = QLabel(self)
+        pixmapfla = QPixmap("imgfla.png")
+        self.imagenfla.setPixmap(pixmapfla)
+        self.imagenfla.setScaledContents(True)
+        self.imagenfla.setFixedSize(150, 100)
         self.pregunt = QLabel(txt_pregunt)
         self.boton_inter1 = QRadioButton(txt_btn_circ1)
         self.boton_inter2 = QRadioButton(txt_btn_circ2)
@@ -26,6 +31,7 @@ class Win_3 (QWidget):
         self.H_Layout = QHBoxLayout()
         self.L_Layout = QVBoxLayout()
         self.R_Layout = QVBoxLayout()
+        self.R_Layout.addWidget(self.imagenfla)
         self.L_Layout.addWidget(self.pregunt)
         self.L_Layout.addWidget(self.boton_inter1)
         self.L_Layout.addWidget(self.boton_inter2)
@@ -40,4 +46,4 @@ class Win_3 (QWidget):
         self.button_NV.clicked.connect(self.next_click)
     def next_click (self):
         self.hide()
-        self.camb_pan2 = Win_4(self.intr_text1, self.intr_text2, self.intr_text3)
+        self.camb_pan2 = Win_4(self.intr_text1, self.intr_text2, self.intr_text3, self.boton_inter1, self.boton_inter2)

@@ -30,9 +30,10 @@ txt_le3 = 'Introduce tu estatura'
 
 
 #ventana 3
-txt_pregunt = 'si quieres puedes responder a estas preguntas'
-txt_btn_circ1 = '¿haces deporte?'
-txt_btn_circ2 = '¿tienes enfermedades o algo parecido?'
+txt_pregunt = 'puedes responder a estas preguntas \n' \
+'son necesarias para ser más precisos'
+txt_btn_circ1 = 'eres hombre'
+txt_btn_circ2 = 'eres mujuer'
 inf_txt1 = 'informacion de lo que hacemos'
 inf_txt2 = 'Nosotros solo estamos intentando ayudarlos a saber cuanto te falta\n' \
 'para que veas de que esa meta es posible no es algo que no puedas lograr\n' \
@@ -41,7 +42,6 @@ inf_txt2 = 'Nosotros solo estamos intentando ayudarlos a saber cuanto te falta\n
 'porquue todos somos diferentes. Que tengas un bonito fin de semana.'
 
 #ventana 4
-tetxo_introc = 'si las respuestas son negativas necesitas bajar /n' \
+tetxo_introc = 'si las respuestas son negativas necesitas bajar \n' \
 'y si las respuestas son positivas necesitas subir'
-texto_resp1 = 'esto es lo que te falta para llegar al peso minimo'
-texto_resp2 = 'esto es lo que te falta para llegar al peso maximo'
+texto_resp1 = 'esto es lo que te falta para llegar al peso promedio'
