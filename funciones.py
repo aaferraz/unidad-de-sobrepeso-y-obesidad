@@ -1,7 +1,7 @@
-from pygame import *
+
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QRadioButton, QLineEdit,  QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout
-from PyQt5.QtGui import QFont, QIntValidator, QDoubleValidator, QPixmap
+from PyQt5.QtGui import QFont, QIntValidator, QDoubleValidator, QPixmap, QColor, QPalette
 from random import *
 
 #todas las ventanas
@@ -23,9 +23,9 @@ txt_btn_nxt_N = 'rechazo'
 txt_n = 'Introduce lo que te piden abajo'
 txt_len1 = 'Introduce tu edad, no mientas viejo'
 txt_le1 = 'Introduce tu edad'
-txt_len2 = 'Introduce tu peso'
+txt_len2 = 'Introduce tu peso en kg'
 txt_le2 = 'Introduce tu peso'
-txt_len3 = 'Ya casi terminamos, introduce tu estatura'
+txt_len3 = 'Ya casi terminamos, introduce tu estatura en cm'
 txt_le3 = 'Introduce tu estatura'
 
 

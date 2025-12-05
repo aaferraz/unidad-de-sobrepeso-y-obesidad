@@ -14,7 +14,15 @@ class Win_1 (QWidget):
         self.setWindowTitle(txt_title)
         self.resize(win_width, win_height)
         self.move(win_x, win_y)
+        paleta = self.palette()
+        color_fondo = QColor(241, 59, 78)
+        paleta.setColor(QPalette.Window, color_fondo)
+        self.setPalette(paleta)
+        self.setAutoFillBackground(True)
+
     def initUI(self):
+        
+        
         self.texto_princ = QLabel (txt_princ)
         self.texto_princ.setFont(QFont(txt_princ, 16, QFont.Bold))
         self.imagenbas = QLabel(self)

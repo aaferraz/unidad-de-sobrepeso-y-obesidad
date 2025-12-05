@@ -16,6 +16,12 @@ class Win_3 (QWidget):
         self.setWindowTitle(txt_title)
         self.resize(win_width, win_height)
         self.move(win_x, win_y)
+        paleta = self.palette()
+        color_fondo = QColor(241, 59, 78)
+        paleta.setColor(QPalette.Window, color_fondo)
+        self.setPalette(paleta)
+        self.setAutoFillBackground(True)
+
     def initUI(self):
         self.imagenfla = QLabel(self)
         pixmapfla = QPixmap("imgfla.png")
