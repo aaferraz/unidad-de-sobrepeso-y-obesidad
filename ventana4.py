@@ -35,10 +35,12 @@ class Win_4 (QWidget):
         if self.boton_inter1.isChecked():
             self.calc1 = float(self.intr_texto3 - 100)
             self.resp1 = QLabel(str(self.calc1 - self.intr_texto2))
+            self.resp1.setFont(QFont(txt_princ, 16, QFont.Bold))
             self.V_layout.addWidget(self.resp1)
         else:
             self.calc2 = float(self.intr_texto3 - 104)
             self.resp2 = QLabel(str(self.calc2 - self.intr_texto2))
+            self.resp2.setFont(QFont(txt_princ, 16, QFont.Bold))
             self.V_layout.addWidget(self.resp2)
         self.H_layout.addLayout(self.V2_layout)
         self.H_layout.addLayout(self.V_layout)
